@@ -1,0 +1,75 @@
+{
+  "name": "thoulee-bootstrap-pagination",
+  "version": "1.0.3",
+  "author": {
+    "name": "Samnang Chhuon",
+    "email": "sn.chh89@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thoulee/Bootstrap-Pagination"
+  },
+  "description": "Pagination for VueJS and NuxtJS that use bootstrap style.",
+  "main": ".dist/thoulee-bootstrap-pagination.common.js",
+  "module": "dist/thoulee-bootstrap-pagination.esm.js",
+  "unpkg": "dist/thoulee-bootstrap-pagination.min.js",
+  "browser": {
+    "./sfc": "src/thoulee-bootstrap-pagination.vue"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "scripts": {
+    "test": "jest",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name thoulee-bootstrap-pagination ./src/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "keywords": [
+    "vue",
+    "nuxtjs",
+    "component",
+    "bootstrap",
+    "directory",
+    "pagination"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "esm": "^3.2.25",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.9",
+    "@vue/cli-plugin-eslint": "~4.5.9",
+    "@vue/cli-service": "~4.5.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
